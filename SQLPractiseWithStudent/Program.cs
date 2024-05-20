@@ -66,7 +66,7 @@ namespace SQLPractiseWithStudent
 
 
 
-                    command.CommandText = $"INSERT INTO Student (StudentID, FirstName, LastName, DateOfBirth)\r\nVALUES ({student_id}, '{New_Student_First_Name}', '{New_Student_Last_Name}', '{Date_of_Birth}');";
+                    command.CommandText = $"INSERT INTO Student (student_id, first_name, last_name, dob)\r\nVALUES ({student_id}, '{New_Student_First_Name}', '{New_Student_Last_Name}', '{Date_of_Birth}');";
                     var dataReader = command.ExecuteReader();
                     while (dataReader.Read())
                     {
